@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barber Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <section id="home">
+        <img src="img/logo.png" alt="Logo" class="logo">
+        <div class="home-text">
+            <h1>Hair Studio</h1>
+            <p>Gorgeous hair is the best revenge</p>
+
+            <div class="home-btn">
+                <a href="#"> <span></span> Find Out</a>
+                <a href="#"> <span></span> Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="navbar">
+        <nav>
+            <ul>
+                <li> <a href="#">HOME</a> </li>
+                <li> <a href="#">FEATURES</a> </li>
+                <li> <a href="#">SERVICES</a> </li>
+                <li> <a href="#">TESTIMONIALS</a> </li>
+                <li> <a href="#">MEET US</a> </li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menu_btn">
+        <img src="img/menu.png" alt="MenuBar " id="menu">
+    </div>
+
+    <script>
+        var menu_btn= document.getElementById("menu_btn")
+        var navbar= document.getElementById("navbar")
+        var menu= document.getElementById("menu")
+
+        navbar.style.right="-250px";
+
+        menu_btn.onclick=function(){
+            if(navbar.style.right=="-250px"){
+                navbar.style.right="0";
+                menu.src="img/close.png";
+            }
+            else{
+                navbar.style.right="-250px";
+                menu.src="img/menu.png";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
