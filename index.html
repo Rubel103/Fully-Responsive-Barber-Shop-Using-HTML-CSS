@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barber Shop</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- link from:::https://www.bootstrapcdn.com/fontawesome/ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,6 +19,10 @@
 </head>
 
 <body>
+
+    <!-- Home Section  -->
+
+
     <section id="home">
         <img src="img/logo.png" alt="Logo" class="logo">
         <div class="home-text">
@@ -44,21 +51,83 @@
         <img src="img/menu.png" alt="MenuBar " id="menu">
     </div>
 
+    <!-- Features Section  -->
+
+    <section id="feature">
+        <div class="title-text">
+            <p>FEATURES</p>
+            <h1>Why Choose Us?</h1>
+        </div>
+
+        <div class="feature-box">
+            <div class="features">
+                <h1>Experienced Staff</h1>
+                <div class="features-description">
+                    <div class="features-icon">
+                        <!-- icon from:::https://fontawesome.com/v4.7.0/icon/shield -->
+
+                        <!-- <i class="fa fa-shield" aria-hidden="true"></i> we can some part like.... -->
+                        <i class="fa fa-shield"></i>
+                    </div>
+                    <div class="features-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, consequuntur aut.
+                            Dignissimos, debitis obcaecati eaque reprehenderit commodi quos.</p>
+                    </div>
+                </div>
+
+
+                <h1>Pre-Booking Online</h1>
+                <div class="features-description">
+                    <div class="features-icon">
+                        <i class="fa fa-check-square-o"></i>
+                    </div>
+                    <div class="features-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, consequuntur aut.
+                            Dignissimos, debitis obcaecati eaque reprehenderit commodi quos.</p>
+                    </div>
+                </div>
+
+
+                <h1>Affordable Cost</h1>
+                <div class="features-description">
+                    <div class="features-icon">
+                        <i class="fa fa-inr"></i>
+                    </div>
+                    <div class="features-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, consequuntur aut.
+                            Dignissimos, debitis obcaecati eaque reprehenderit commodi quos.</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="features-img">
+                <img src="img/barber-man.jpg" alt="barber-man">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
     <script>
-        var menu_btn= document.getElementById("menu_btn")
-        var navbar= document.getElementById("navbar")
-        var menu= document.getElementById("menu")
+        var menu_btn = document.getElementById("menu_btn")
+        var navbar = document.getElementById("navbar")
+        var menu = document.getElementById("menu")
 
-        navbar.style.right="-250px";
+        navbar.style.right = "-250px";
 
-        menu_btn.onclick=function(){
-            if(navbar.style.right=="-250px"){
-                navbar.style.right="0";
-                menu.src="img/close.png";
+        menu_btn.onclick = function () {
+            if (navbar.style.right == "-250px") {
+                navbar.style.right = "0";
+                menu.src = "img/close.png";
             }
-            else{
-                navbar.style.right="-250px";
-                menu.src="img/menu.png";
+            else {
+                navbar.style.right = "-250px";
+                menu.src = "img/menu.png";
             }
         }
     </script>
