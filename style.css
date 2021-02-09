@@ -198,11 +198,14 @@ nav ul li a{
 .features-img{
     flex-basis: 50%;
     margin: auto;
+    
 }
 
 .features-img img{
     width: 70%;
     border-radius: 10px;
+    
+    
 }
 .features h1{
     text-align: left;
@@ -232,4 +235,123 @@ nav ul li a{
     padding: 0 20px;
     /* text-align: initial; */
     text-align: justify;
+}
+
+/* responsive features section  */
+
+@media screen and (max-width: 770px){
+    .title-text h1{
+   
+        font-size: 32px;
+        
+     }
+     .features{
+        flex-basis: 100%;
+    }
+    .features-text p{
+ 
+        text-align: initial;
+
+    }
+    .features-img{
+        flex-basis: 100%;
+    }
+    .features-img img{
+        width: 100%;
+        
+    }
+
+}
+
+
+/* services section  */
+
+#service{
+    width: 100%;
+    padding: 70px 0;
+    background: #efefef;
+
+}
+
+.service-box{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.single-service{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom:20px ;
+    color: white;
+    position: relative;
+
+}
+.single-service img{
+    width: 100%;
+    border-radius: 7px;
+
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.5),#6153d2);
+    opacity: 0;
+    transition: 1s;
+}
+.single-service:hover .overlay{
+    opacity: 1;
+
+}
+.service-description{
+    width: 80%;
+    position: absolute;
+    /* bottom: 40%; */
+    bottom: 0;
+    left: 50%;
+    opacity: 0;
+    transition: 1s;
+    transform: translateX(-50%);
+}
+hr{
+    background: #fff;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+}
+
+.service-description p{
+    font-size: 14px;
+}
+
+.single-service:hover  .service-description{
+    bottom: 40%;
+    opacity: 1;
+}
+
+/* responsive services section  */
+
+@media screen and (max-width: 770px){
+    .single-service{
+        flex-basis: 100%;
+    }
+    .service-description p{
+        font-size: 12px;
+    }
+    hr{
+        margin: 5px auto;
+    }
+    .single-service:hover  .service-description{
+        bottom: 28% !important;
+        
+    }
 }
